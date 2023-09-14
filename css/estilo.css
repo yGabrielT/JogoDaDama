@@ -1,13 +1,13 @@
 body {
     margin: 0px;
-    background-image: linear-gradient(to left, rgb(50, 16, 95), #d758e7);
+    background-color: #72A8FF;
     font-family: "Arial";
 }
 
 header {
     height: 50px;
-    background-image: linear-gradient(to left, rgb(50, 16, 95), #d758e7);
-    border: 1px solid #CCC;
+    background-color: #72A8FF;
+ 
     width: 100%;
     margin: 0px auto;
     text-align: center;
@@ -25,8 +25,8 @@ header h1 span {
 section {
     text-align: center;
     width: 100%;
-    background-image: linear-gradient(to left, rgb(50, 16, 95), #d758e7);
-    border: 1px solid #CCC;
+    background-color: #72A8FF;
+
     margin: 20px auto;
 }
 
@@ -34,21 +34,21 @@ main {
     -webkit-perspective: 300;
     perspective: 300;
     width: 100%;
-    background-image: linear-gradient(to left, rgb(50, 16, 95), #d758e7);
-    border: 1px solid #CCC;
+    background-color: #72A8FF;
     height: 550px;
     margin: 20px auto;
 }
 
 .board {
-    text-align: center;
-    -ms-transform: rotateX(8deg);
-    -webkit-transform: rotateX(8deg);
-    transform: rotateX(1deg);
+    text-align: left;
+
+
     width: 500px;
     height: 456px;
-    border: 1px solid black;
-    margin: 20px auto;
+    border-radius: 20px;
+    border: 30px solid #213F6F;
+    background: #213F6F;
+    margin-left: 250px;
 }
 
 .row {
@@ -59,6 +59,7 @@ main {
     width: 12.5%;
     height: 12.5%;
     float: left;
+    
     background-color: #f39494;
 }
 
@@ -67,11 +68,11 @@ main {
 }
 
 .cell-white {
-    background-color: #e6d4d4;
+    background-color: #FFF;
 }
 
 .cell-black {
-    background-color: #29152b;
+    background-color: #183037;
 }
 
 .selected {
@@ -138,8 +139,8 @@ main {
 }
 
 footer {
-    background-image: linear-gradient(to left, rgb(50, 16, 95), #d758e7);
-    border: 1px solid #CCC;
+    background-color: #72A8FF;
+
     width: 100%;
     margin: 0px auto;
     text-align: center;

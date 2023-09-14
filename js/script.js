@@ -271,7 +271,7 @@ let model = {
   /*FUNÇÃO PEÇA PRETA */
   BlackPiece: function (row, column) {
     this.__proto__ = new model.Piece(row, column);
-    this.src = "img/black.jpg";
+    this.src = "img/bluepiece.png";
     this.color = "black";
     this.highlightMoves = function (row, column) {
       if (this.highlightMove(row - 1, column - 1))
@@ -290,7 +290,7 @@ let model = {
   /*FUNÇÃO PEÇA BRANCA */
   WhitePiece: function (row, column) {
     this.__proto__ = new model.Piece(row, column);
-    this.src = "img/white.jpg";
+    this.src = "img/whitepiece.png";
     this.color = "white";
     this.highlightMoves = function (row, column) {
       if (this.highlightMove(row + 1, column + 1))
@@ -309,7 +309,7 @@ let model = {
   /*FUNÇÃO DAMA PRETA E TROCA A IMAGEM */
   BlackDama: function (row, column) {
     this.__proto__ = new model.BlackPiece(row, column);
-    this.src = "img/blackdama.png";
+    this.src = "img/bluepiece.png";
     this.highlightMoves = function (row, column) {
       if (this.highlightMove(row + 1, column + 1))
         this.highlightMove(row + 2, column + 2);
@@ -327,7 +327,7 @@ let model = {
   /*FUNÇÃO PEÇA BRANCA E TROCA A IMAGEM */
   WhiteDama: function (row, column) {
     this.__proto__ = new model.WhitePiece(row, column);
-    this.src = "img/whitedama.png";
+    this.src = "img/whitepiece.png";
     this.highlightMoves = function (row, column) {
       if (this.highlightMove(row + 1, column + 1))
         this.highlightMove(row + 2, column + 2);
